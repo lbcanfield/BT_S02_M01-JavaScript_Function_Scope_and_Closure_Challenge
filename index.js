@@ -16,9 +16,9 @@
 */
 
 function processFirstItem(stringList, callback) {
-  return callback(stringList[0])
+     return callback(stringList[0])
 }
-console.log('example task:', processFirstItem(['foo','bar'],function(str){return str+str}));
+console.log('example task:', processFirstItem(['foo', 'bar'], function (str) { return str + str }));
 
 // ⭐️ Example Challenge END ⭐️
 
@@ -39,10 +39,10 @@ console.log('example task:', processFirstItem(['foo','bar'],function(str){return
 
 // counter1 code
 function counterMaker() {
-  let count = 0;
-  return function counter() {
-   return count++;
-  }
+     let count = 0;
+     return function counter() {
+          return count++;
+     }
 }
 
 const counter1 = counterMaker();
@@ -51,7 +51,7 @@ const counter1 = counterMaker();
 let count = 0;
 
 function counter2() {
-  return count++;
+     return count++;
 }
 
 
@@ -64,8 +64,8 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning() {
+     return Math.floor(Math.random() * 3);
 }
 
 
@@ -81,10 +81,10 @@ Use the finalScore function below to do the following:
   "Home": 11,
   "Away": 5
 }
-*/ 
+*/
 
-function finalScore(/*Code Here*/){
-  /*Code Here*/
+function finalScore(/*Code Here*/) {
+     /*Code Here*/
 }
 
 
@@ -102,7 +102,7 @@ For example: invoking getInningScore(inning) might return this object:
 
 
 function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+     /*Your Code Here */
 
 }
 
@@ -148,25 +148,25 @@ Use the scoreboard function below to do the following:
 ] */
 // NOTE: There is no test associated with this code; if your output matches the given example, consider it complete!
 function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+     /* CODE HERE */
 }
 
 
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
-function foo(){
-  console.log('its working');
-  return 'bar';
+function foo() {
+     console.log('its working');
+     return 'bar';
 }
 foo();
 module.exports = {
-  foo,
-  processFirstItem,
-  counter1,
-  counter2,
-  inning,
-  finalScore,
-  getInningScore,
-  scoreboard,
+     foo,
+     processFirstItem,
+     counter1,
+     counter2,
+     inning,
+     finalScore,
+     getInningScore,
+     scoreboard,
 }
