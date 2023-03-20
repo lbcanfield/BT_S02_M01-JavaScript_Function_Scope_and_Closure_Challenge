@@ -109,8 +109,11 @@ For example: invoking getInningScore(inning) might return this object:
   */
 
 
-function getInningScore(/*Your Code Here */) {
-     /*Your Code Here */
+function getInningScore(cbFunc) {
+     return {
+          Home: cbFunc(),
+          Away: cbFunc()
+     }
 
 }
 
