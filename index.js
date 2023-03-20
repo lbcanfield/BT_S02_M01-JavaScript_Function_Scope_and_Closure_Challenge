@@ -83,8 +83,16 @@ Use the finalScore function below to do the following:
 }
 */
 
-function finalScore(/*Code Here*/) {
-     /*Code Here*/
+function finalScore(cbFunc, numInnings) {
+     let runsHome = 0, runsAway = 0;
+     for (let i = 0; i < numInnings; i += 1) {
+          runsHome += cbFunc();
+          runsAway += cbFunc();
+     }
+     return {
+          Home: runsHome,
+          Away: runsAway
+     }
 }
 
 
